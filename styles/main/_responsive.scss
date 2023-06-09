@@ -1,0 +1,554 @@
+// Responsive Area
+@media (min-width: 992px) {
+  .main-content {
+    &.sidebar-content {
+      .cus-overflow {
+        overflow: hidden;
+      }
+      .profile-sidebar,
+      .contact-sidebar {
+        overflow-x: hidden;
+        width: 100%;
+        transition: all 0.5s;
+      }
+      .profile-sidebar {
+        &.active {
+          width: 100px;
+          .profile-pic,
+          a {
+            justify-content: flex-end;
+            i {
+              font-size: 40px;
+            }
+          }
+          .your-shortcuts h6 {
+            display: none !important;
+          }
+          .your-shortcuts span,
+          .your-shortcuts h6,
+          .text-area,
+          span {
+            transition: all 0.3s;
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+        }
+      }
+      .contact-sidebar {
+        &.active {
+          width: 100px;
+          margin: auto;
+          margin-right: 0;
+          transition: 0.3s;
+          .avatar-item {
+            gap: 0 !important;
+          }
+          .profile-area {
+            justify-content: center !important;
+          }
+          .title-bar,
+          .abs-area,
+          .info-area,
+          .btn-group {
+            transition: all 0.3s;
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+        }
+      }
+      .col-xxl-3 {
+        width: 25% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .sidebar-toggler {
+    position: relative;
+    .cus-scrollbar {
+      top: 40px;
+    }
+    .sidebar-head {
+      position: absolute;
+      overflow: hidden;
+      right: 0;
+      top: 0;
+      &.active {
+        z-index: 1;
+        .side-wrapper {
+          visibility: visible;
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      .side-wrapper {
+        transform: translateX(200px);
+        opacity: 0;
+        right: 0;
+        visibility: hidden;
+        transition: 0.3s;
+      }
+      .sidebar-area {
+        width: 100%;
+      }
+      .sidebar-wrapper {
+        min-width: 300px;
+        &.max-width {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  .main-content .cus-scrollbar {
+    &.contact-sidebar-head {
+      position: absolute;
+      top: 115px;
+      right: 0;
+      .contact-sidebar {
+        transform: translateX(200px);
+        opacity: 0;
+        &.active {
+          transform: translateX(0px) translateY(-20px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .cart-table {
+    .table {
+      width: 133%;
+    }
+  }
+}
+
+@media (min-width: 1699px) {
+  .main-content.sidebar-content {
+    .col-xxl-3 {
+      width: 18% !important;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .banner-section .overlay .banner-content {
+    padding: 110px 0 30px;
+  }
+  .main-content .find-tickets iframe {
+    height: 230px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  h1,
+  h1 > a {
+    font-size: 57px;
+    line-height: 74.1px;
+    margin-top: -16px;
+  }
+  h2,
+  h2 > a {
+    font-size: 43px;
+    line-height: 55.9px;
+    margin-top: -10px;
+  }
+  .preloader {
+    background-size: 30%;
+  }
+  .header-section .navbar .navbar-brand {
+    margin-right: 12px;
+  }
+  .header-section .navbar .navbar-nav a {
+    font-size: 16px;
+  }
+  .header-section .navbar .navbar-collapse .right-area {
+    margin-left: 30px;
+  }
+  .main-content .sidebar-wrapper {
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 991px) {
+  // Normalize
+  h1,
+  h1 > a {
+    font-size: 57px;
+    line-height: 68.4px;
+    margin-top: -16px;
+  }
+
+  h2,
+  h2 > a {
+    font-size: 43px;
+    line-height: 51.6px;
+    margin-top: -10px;
+  }
+
+  h3,
+  h3 > a {
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-top: -8px;
+  }
+
+  h4,
+  h4 > a,
+  .xxltxt {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -6px;
+  }
+
+  h5,
+  h5 > a,
+  .xltxt {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -4px;
+  }
+
+  h6,
+  h6 > a,
+  table thead tr th,
+  button,
+  a,
+  p,
+  span,
+  li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .lgtxt {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .cmn-btn {
+    padding: 4px 12px;
+    [class*="icon-"]:before {
+      line-height: 1;
+    }
+  }
+
+  // Header Responsive
+  .header-section .navbar-toggler {
+    display: inline-block;
+  }
+  .header-section .navbar .navbar-brand img {
+    max-width: initial;
+  }
+  .header-section .navbar .navbar-collapse .navbar-nav {
+    max-height: 250px;
+    margin: 20px 0;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+  }
+  .header-section .navbar .dropdown-menu {
+    column-count: 1;
+  }
+  .header-section .navbar .dropdown-toggle::after {
+    z-index: 0;
+  }
+  .header-section .dropend {
+    margin-left: 18px;
+  }
+  .header-section .navbar .navbar-collapse .right-area {
+    margin-left: 0;
+  }
+  // End Header
+
+  .banner-section .overlay .sec-img {
+    display: none;
+  }
+  .banner-section .overlay .banner-content {
+    padding: 160px 0 110px;
+  }
+  .banner-section.inner-banner .banner-content {
+    padding: 160px 0 60px;
+  }
+  .header-section .navbar .navbar-collapse .right-area .search-form {
+    left: 0;
+    top: 50px;
+  }
+  .sec-img {
+    text-align: center;
+    margin-top: 30px;
+    max-width: 65%;
+    img {
+      max-width: 100% !important;
+    }
+  }
+  .main-content {
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    .profile-sidebar {
+      position: absolute;
+      transform: translateX(-200px);
+      top: initial;
+      z-index: 2;
+      opacity: 0;
+      min-width: 290px;
+      transition: 0.3s;
+      &.active {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+      &.max-width {
+        max-width: 300px;
+      }
+    }
+  }
+  .header-menu .single-item {
+    .main-area {
+      top: initial;
+      right: initial;
+      bottom: 70px;
+      transform: translateY(-70px);
+      &.active {
+        transform: translateY(0);
+      }
+    }
+    &.profile-area {
+      .main-area {
+        right: 0;
+      }
+    }
+  }
+  .main-content .single-box .table.group-privacy-table {
+    width: 100%;
+  }
+  .main-content .contact-sidebar-head {
+    position: absolute;
+    overflow-x: initial;
+    .contact-sidebar {
+      transform: translateX(200px);
+      opacity: 0;
+      right: 0;
+      transition: 0.3s;
+      &.active {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+    .sidebar-area {
+      width: 100%;
+    }
+    .sidebar-wrapper {
+      min-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .search-form {
+    position: absolute;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 0.3s;
+    &.active {
+      transform: translateY(70px);
+      opacity: 1;
+    }
+  }
+  .input-area {
+    padding: 15px 10px;
+  }
+  .header-menu .single-item.notification-area .main-area {
+    min-width: 290px;
+    white-space: initial;
+    right: 20%;
+  }
+  .main-content .single-box .table {
+    width: 115%;
+  }
+  .header-section .navbar .navbar-brand img {
+    max-width: 40px;
+  }
+  .main-content #memberRequest,
+  .main-content #postChart {
+    margin-bottom: -15px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 575px) {
+  h1,
+  h1 > a {
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: -9px;
+  }
+  h2,
+  h2 > a {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: -7px;
+  }
+  h3,
+  h3 > a {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -6px;
+  }
+  h4,
+  h4 > a {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: -4px;
+  }
+  a,
+  p,
+  span,
+  li,
+  .cmn-btn,
+  thead tr th,
+  tbody tr th,
+  tbody tr td,
+  input,
+  label,
+  textarea,
+  h6,
+  h6 > a {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .section-header {
+    margin-bottom: 35px;
+  }
+  .title {
+    margin-bottom: 15px;
+  }
+  .sub-title {
+    margin-bottom: 14px;
+  }
+  .xxltxt {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .xltxt {
+    font-size: 18px;
+    line-height: 25.5px;
+  }
+  .lgtxt {
+    font-size: 15px;
+    line-height: 22.4px;
+  }
+  .fs-xxl {
+    font-size: 24px;
+  }
+
+  // For Body
+  .main-content
+    .post-item
+    .post-single-box
+    .comments-area
+    .comment-item-nested
+    .avatar-item,
+  .main-content
+    .post-item
+    .post-single-box
+    .comments-area
+    .single-comment-area
+    .parent-comment
+    .avatar-item {
+    img {
+      width: 35px;
+    }
+  }
+  .main-content .post-item .post-single-box .comment-form {
+    margin-top: 10px;
+  }
+  .main-content .single-box .table {
+    width: 135%;
+  }
+  .main-content
+    .post-item
+    .post-single-box
+    .comments-area
+    .single-comment-area
+    .parent-comment
+    .avatar-item:before {
+    top: 50px;
+  }
+  .main-content
+    .post-item
+    .post-single-box
+    .comments-area
+    .single-comment-area
+    .sibling-comment:before,
+  .main-content
+    .post-item
+    .post-single-box
+    .comments-area
+    .comment-item-nested
+    .avatar-item:before {
+    left: -35px;
+  }
+  .main-content #memberRequest,
+  .main-content #postChart {
+    margin-bottom: -5px;
+  }
+  .magnific-area .mfp-iframe {
+    width: 40px;
+    height: 40px;
+  }
+  .header-section .navbar .navbar-nav a i {
+    font-size: 32px;
+  }
+  .single-input label {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-menu .single-item.notification-area .main-area {
+    right: 5px;
+    left: 5px;
+  }
+  .friend-request .col-8 {
+    width: 100% !important;
+  }
+  .main-content .single-box .table {
+    width: 225%;
+  }
+  .main-content #memberRequest,
+  .main-content #postChart {
+    margin-bottom: -15px;
+  }
+  .main-content .chat-area .main-chat-box li {
+    max-width: 95%;
+    gap: 10px;
+  }
+  .cart-table {
+    .table {
+      width: 230%;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .setting-row .col-6 {
+    width: 70% !important;
+  }
+  .profile-picture-area .col-8,
+  .graph-col .col-6 {
+    width: 100% !important;
+  }
+}

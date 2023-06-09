@@ -1,0 +1,65 @@
+/* Material Symbols Outlined */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url("./../webfonts/material-icon.woff2") format("woff2");
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-grid;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  color: var(--heading-1st-color);
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Default Font Style */
+.mat-icon {
+  --mat-size: 24px;
+  --mat-wght: 200;
+  --mat-fill: 0;
+  --mat-grad: 0;
+  font-size: var(--mat-size);
+  font-variation-settings: "wght" var(--mat-wght), "FILL" var(--mat-fill),
+    "GRAD" var(--mat-grad);
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
+.fs-xxxl {
+  font-size: 40px;
+}
+
+.fs-xxl {
+  font-size: 34px;
+}
+.fs-xl {
+  font-size: 30px;
+}
+.fs-lg {
+  font-size: 24px;
+}
+.fs-md {
+  font-size: 16px;
+}

@@ -1,0 +1,41 @@
+/*============================================ 
+# Template Name: Circlehub
+# Version: 1.0
+# Date: 24/05/2023
+# Author: uiaxis
+# Author URI: https://themeforest.net/user/uiaxis
+# Description: Circlehub - React Nextjs Templates
+============================================*/
+
+/*============================================ 
+======== Table of Css Content =========
+# Typography
+# Normalize 
+# Global style
+# Header Area
+# Banner Area
+# Section Area
+# Footer Area
+============================================*/
+
+// default font family
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
+
+// CSS Plugin import
+@import "./../public/vendor/font-awesome/css/fontawesome.min.css";
+@import "./../public/vendor/font-awesome/css/materialicons.css";
+// @import "../css/plugins/animate.min.css";
+
+// Bootstrap import
+@import "./_bootstrap.scss";
+
+// Pages
+@import "./pages/_banner-footer.scss";
+@import "./pages/_section.scss";
+
+// Responsive Area
+@import "./main/_responsive.scss";
+
+// Sass Global
+@import "./main/_global.scss";
