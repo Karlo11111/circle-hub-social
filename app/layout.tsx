@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="description" content="Circlehub React Nextjs Template" />
-        <title>Circlehub - React Nextjs Template</title>
+        <title>Freedom Social</title>
       </head>
       <body>
         <ThemeProvider attribute="class" enableSystem={false}>
