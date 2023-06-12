@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 import Message from "../common/Message";
 import Notification from "../common/Notification";
 import Setting from "../common/Setting";
-import logo from "/public/images/logo.png";
+// import logo from "/public/images/logo.png";
+import logo from "/public/images/icon.png";
 
 const NavBar = ({ clss = "container" }: { clss: string }) => {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -20,7 +21,7 @@ const NavBar = ({ clss = "container" }: { clss: string }) => {
     }
   };
 
-  const activeHandler = (opt: string) => {
+const activeHandler = (opt: string) => {
     if (opt === active) {
       setActive("");
     } else {
@@ -37,15 +38,14 @@ const NavBar = ({ clss = "container" }: { clss: string }) => {
 
   return (
     <header
-      className={`header-section header-menu ${
-        windowHeight > 50 && "animated fadeInDown header-fixed"
-      }`}
+      className={`header-section header-menu ${windowHeight > 50 && "animated fadeInDown header-fixed"
+        }`}
     >
       <nav className="navbar navbar-expand-lg p-0">
         <div className={clss}>
           <nav className="navbar w-100 navbar-expand-lg justify-content-betweenm">
             <Link href="/" className="navbar-brand">
-              <Image src={logo} className="logo" alt="logo" />
+              <Image src={logo} height={60} width={60} className="logo" style={{borderRadius:"20px"}} alt="logo" />
             </Link>
             <button
               className="button search-active d-block d-md-none"
@@ -73,20 +73,21 @@ const NavBar = ({ clss = "container" }: { clss: string }) => {
                   </i>
                 </Link>
               </li>
-              <li>
+              <div className="tooltip-container">
                 <Link href="/#news-feed" className="nav-icon feed">
                   <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
                     feed
                   </i>
+                  <span className="tooltip-text">Research</span>
                 </Link>
-              </li>
-              <li>
+              </div>
+              {/* <li>
                 <Link href="/groups" className="nav-icon">
                   <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
                     group
                   </i>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="#" className="nav-icon">
                   <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
@@ -96,26 +97,24 @@ const NavBar = ({ clss = "container" }: { clss: string }) => {
               </li>
             </ul>
             <div className="right-area position-relative d-flex gap-3 gap-xxl-6 align-items-center">
+              
               <div
-                className={`single-item d-none d-lg-block messages-area ${
-                  active === "message" ? "active" : ""
-                }`}
+                className={`single-item d-none d-lg-block messages-area ${active === "message" ? "active" : ""
+                  }`}
               >
                 {/* Message */}
                 <Message activeHandler={activeHandler} />
               </div>
               <div
-                className={`single-item d-none d-lg-block messages-area notification-area ${
-                  active === "notification" ? "active" : ""
-                }`}
+                className={`single-item d-none d-lg-block messages-area notification-area ${active === "notification" ? "active" : ""
+                  }`}
               >
                 {/* Notification */}
                 <Notification activeHandler={activeHandler} />
               </div>
               <div
-                className={`single-item d-none d-lg-block profile-area position-relative ${
-                  active === "settings" ? "active" : ""
-                }`}
+                className={`single-item d-none d-lg-block profile-area position-relative ${active === "settings" ? "active" : ""
+                  }`}
               >
                 {/* Setting */}
                 <Setting activeHandler={activeHandler} />

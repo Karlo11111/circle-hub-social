@@ -16,7 +16,8 @@ const Contact = ({ children }) => {
       {children}
 
       <div className="d-flex flex-column gap-6">
-        {pathname === "/" && (
+      <button className="cmn-btn" style={{width:"12rem"}}>Create Local Community</button>
+        {/* {pathname === "/" && (
           <div className="profile-area d-center position-relative align-items-center justify-content-between">
             <div className="avatar-item d-flex gap-3 align-items-center">
               <div className="avatar-item">
@@ -38,17 +39,17 @@ const Contact = ({ children }) => {
               5
             </span>
           </div>
-        )}
+        )} */}
 
-        {contentData?.map((itm) => (
+        {/* {contentData?.map((itm) => (
           <div
             key={itm.id}
             className="profile-area d-center justify-content-between"
           >
-            {/* Single Contact     */}
+            Single Contact    
             <SingleContact data={itm} />
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

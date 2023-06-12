@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Shortcuts from "../common/Shortcuts";
-import avatar_1 from "/public/images/avatar-1.png";
+import avatar_1 from "/public/images/avatar-12.png";
 
 const HomeLeft = ({ clss }: { clss?: string }) => {
   const [activeProfile, setActiveProfile] = useState<boolean>(false);
@@ -49,11 +49,14 @@ const HomeLeft = ({ clss }: { clss?: string }) => {
         </div>
         <ul className="profile-link mt-7 mb-7 pb-7">
           {/* home Left Menu */}
+        
+
           {homeLeftMenu.map(([icon, item, url], i) => (
             <li key={i}>
               <Link
                 href={url}
                 className={`d-flex gap-4 ${pathname === url ? "active" : ""}`}
+                target={(icon === "Link") ? "_blank" : "_self"}
               >
                 <i className="material-symbols-outlined mat-icon"> {icon} </i>
                 <span>{item}</span>
@@ -61,12 +64,12 @@ const HomeLeft = ({ clss }: { clss?: string }) => {
             </li>
           ))}
         </ul>
-        <div className="your-shortcuts">
+        {/* <div className="your-shortcuts">
           <h6 className="mb-7">Your shortcuts</h6>
 
-          {/* Shortcuts */}
+          Shortcuts
           <Shortcuts />
-        </div>
+        </div> */}
       </div>
     </>
   );

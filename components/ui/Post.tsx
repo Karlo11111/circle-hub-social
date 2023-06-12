@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import PostAction from "./PostAction";
+import avatar_1 from "/public/images/avatar-12.png";
 
 interface PostProps {
   postText: string;
@@ -20,7 +21,7 @@ const Post = ({ post }: { post: PostProps }) => {
           <div className="avatar position-relative">
             <Image
               className="avatar-img max-un"
-              src={authorAvt}
+              src={avatar_1}
               alt={authorName}
             />
           </div>

@@ -16,7 +16,7 @@ const HomeMain = () => {
             </div>
             <div className="col-xxl-6 col-xl-5 col-lg-8 mt-0 mt-lg-10 mt-xl-0 d-flex flex-column gap-7 cus-z">
               {/* Story Slider */}
-              <StorySlider />
+              {/* <StorySlider /> */}
 
               {/* Make Post */}
               <MakePost />

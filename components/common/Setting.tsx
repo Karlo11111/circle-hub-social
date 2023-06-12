@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import avatar_1 from "/public/images/avatar-1.png";
+import avatar_1 from "/public/images/avatar-12.png";
 
 const Setting = ({ activeHandler }: { activeHandler: (a: string) => void }) => {
   const [enabled, setEnabled] = useState(false);
@@ -24,6 +24,7 @@ const Setting = ({ activeHandler }: { activeHandler: (a: string) => void }) => {
         <span
           className="avatar cmn-head active-status"
           onClick={() => activeHandler("settings")}
+          // onMouseOut={()=> activeHandler("")}
         >
           <Image className="avatar-img max-un" src={avatar_1} alt="avatar" />
         </span>

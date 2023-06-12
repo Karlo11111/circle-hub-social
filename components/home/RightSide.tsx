@@ -34,7 +34,7 @@ const RightSide = () => {
             {/* Contact */}
             <Contact>
               <div className="mb-4">
-                <h6 className="d-inline-flex">Contact</h6>
+                <h6 className="d-inline-flex">Local Comminities</h6>
               </div>
             </Contact>
           </div>

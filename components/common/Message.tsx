@@ -7,7 +7,7 @@ import Link from "next/link";
 const Message = ({ activeHandler }: { activeHandler: (a: string) => void }) => {
   return (
     <>
-      <div className="messages-btn cmn-head">
+      <div className="messages-btn cmn-head" >
         <div
           className="icon-area d-center position-relative"
           onClick={() => activeHandler("message")}
