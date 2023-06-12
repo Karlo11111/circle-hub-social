@@ -67,7 +67,7 @@ const activeHandler = (opt: string) => {
             </div>
             <ul className="navbar-nav feed flex-row gap-xl-20 gap-lg-10 gap-sm-7 gap-3 py-4 py-lg-0 m-lg-auto ms-auto ms-aut align-self-center">
               <li>
-                <Link href="/index-two" className="nav-icon home active">
+                <Link href="/" className="nav-icon home active">
                   <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
                     home
                   </i>
