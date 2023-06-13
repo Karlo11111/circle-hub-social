@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import ContactAction from "../ui/ContactAction";
-
+import avatar_1 from "/public/images/avatar-12.png";
 interface ContactProps {
   id: number;
   name: string;
@@ -15,7 +15,7 @@ const SingleContact = ({ data }: { data: ContactProps }) => {
     <>
       <div className="avatar-item d-flex gap-3 align-items-center">
         <div className="avatar-item">
-          <Image className="avatar-img max-un" src={avt} alt="avatar" />
+          <Image className="avatar-img max-un" src={avatar_1} alt="avatar" />
         </div>
         <div className="info-area">
           <h6 className="m-0">

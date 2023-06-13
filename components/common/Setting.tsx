@@ -5,8 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import avatar_1 from "/public/images/avatar-12.png";
-
-const Setting = ({ activeHandler }: { activeHandler: (a: string) => void }) => {
+interface MessageProps {
+  activeHandler: (a: string) => void;
+  stgRef: React.RefObject<HTMLDivElement>;
+}
+const Setting: React.FC<MessageProps> = ({ activeHandler, stgRef }) => {
   const [enabled, setEnabled] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -20,7 +23,7 @@ const Setting = ({ activeHandler }: { activeHandler: (a: string) => void }) => {
 
   return (
     <>
-      <div className="profile-pic d-flex align-items-center">
+      <div className="profile-pic d-flex align-items-center" ref={stgRef}>
         <span
           className="avatar cmn-head active-status"
           onClick={() => activeHandler("settings")}

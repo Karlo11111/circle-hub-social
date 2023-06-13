@@ -1,13 +1,16 @@
 "use client";
-
+import React,{useRef } from 'react'
 import messageData from "@/data/messageData";
 import Image from "next/image";
 import Link from "next/link";
-
-const Message = ({ activeHandler }: { activeHandler: (a: string) => void }) => {
+interface MessageProps {
+  activeHandler: (a: string) => void;
+  msgRef: React.RefObject<HTMLDivElement>;
+}
+const Message: React.FC<MessageProps> = ({ activeHandler, msgRef }) => {
   return (
     <>
-      <div className="messages-btn cmn-head" >
+      <div className="messages-btn cmn-head" ref={msgRef}>
         <div
           className="icon-area d-center position-relative"
           onClick={() => activeHandler("message")}

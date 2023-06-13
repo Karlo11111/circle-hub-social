@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Message from "../common/Message";
 import Notification from "../common/Notification";
 import Setting from "../common/Setting";
@@ -13,6 +13,9 @@ const NavBar = ({ clss = "container" }: { clss: string }) => {
   const [windowHeight, setWindowHeight] = useState(0);
   const [active, setActive] = useState<string>("");
   const [activeSearctForm, setActiveSearctForm] = useState(false);
+  const msgRef = useRef<HTMLDivElement>(null);
+  const ntfRef = useRef<HTMLDivElement>(null);
+  const stgRef = useRef<HTMLDivElement>(null);
 
   const navBarTop = () => {
     if (window !== undefined) {
@@ -21,7 +24,7 @@ const NavBar = ({ clss = "container" }: { clss: string }) => {
     }
   };
 
-const activeHandler = (opt: string) => {
+const activeHandler = (opt: any) => {  
     if (opt === active) {
       setActive("");
     } else {
@@ -33,6 +36,28 @@ const activeHandler = (opt: string) => {
     window.addEventListener("scroll", navBarTop);
     return () => {
       window.removeEventListener("scroll", navBarTop);
+    };
+  }, []);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    
+    if  (
+      ntfRef.current &&
+      !ntfRef.current.contains(event.target as Node) &&
+      stgRef.current &&
+      !stgRef.current.contains(event.target as Node) &&
+      msgRef.current &&
+      !msgRef.current.contains(event.target as Node)
+    ) {
+      setActive("");
+    }
+    
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
@@ -103,21 +128,21 @@ const activeHandler = (opt: string) => {
                   }`}
               >
                 {/* Message */}
-                <Message activeHandler={activeHandler} />
+                <Message activeHandler={activeHandler} msgRef={msgRef} />
               </div>
               <div
                 className={`single-item d-none d-lg-block messages-area notification-area ${active === "notification" ? "active" : ""
                   }`}
               >
                 {/* Notification */}
-                <Notification activeHandler={activeHandler} />
-              </div>
+                <Notification activeHandler={activeHandler} ntfRef={ntfRef}/>
+              </div>  
               <div
                 className={`single-item d-none d-lg-block profile-area position-relative ${active === "settings" ? "active" : ""
                   }`}
               >
                 {/* Setting */}
-                <Setting activeHandler={activeHandler} />
+                <Setting activeHandler={activeHandler} stgRef={stgRef}/>
               </div>
             </div>
           </nav>

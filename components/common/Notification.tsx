@@ -9,14 +9,14 @@ import avatar_4 from "/public/images/avatar-4.png";
 import emoji_love from "/public/images/icon/emoji-love.png";
 import speech_bubble from "/public/images/icon/speech-bubble.png";
 
-const Notification = ({
-  activeHandler,
-}: {
+interface MessageProps {
   activeHandler: (a: string) => void;
-}) => {
+  ntfRef: React.RefObject<HTMLDivElement>;
+}
+const Notification:React.FC<MessageProps> = ({ activeHandler, ntfRef }) => {
   return (
     <>
-      <div className="notification-btn cmn-head position-relative">
+      <div className="notification-btn cmn-head position-relative" ref={ntfRef}>
         <div
           className="icon-area d-center position-relative"
           onClick={() => activeHandler("notification")}

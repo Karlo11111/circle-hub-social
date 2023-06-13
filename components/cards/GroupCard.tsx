@@ -4,6 +4,8 @@ import ContactAction from "../ui/ContactAction";
 import avatar_2 from "/public/images/avatar-2.png";
 import avatar_3 from "/public/images/avatar-3.png";
 import avatar_4 from "/public/images/avatar-4.png";
+import avatar from "/public/images/group-avatar-1.png";
+import coverPic from "/public/images/image.png";
 
 interface GroupProps {
   id: number;
@@ -18,7 +20,7 @@ const GroupCard = ({ data }: { data: GroupProps }) => {
   return (
     <div className="single-box p-5">
       <div className="avatar-box position-relative">
-        <Image className="avatar-img w-100" src={banner_img} alt="avatar" />
+        <Image className="avatar-img w-100" src={coverPic} alt="avatar" />
         <div className="abs-area w-100 position-absolute top-0 p-3 d-center justify-content-end">
           {/* Contact Action */}
           <ContactAction
@@ -30,7 +32,7 @@ const GroupCard = ({ data }: { data: GroupProps }) => {
         </div>
       </div>
       <div className="abs-avatar-item">
-        <Image className="avatar-img max-un" src={avt} alt="avatar" />
+        <Image className="avatar-img max-un" src={avatar} alt="avatar" />
       </div>
       <Link href={`/groups/${id}`}>
         <h6 className="m-0 mb-2 mt-3">{name}</h6>
