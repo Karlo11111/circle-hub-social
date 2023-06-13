@@ -3,7 +3,7 @@
 import { ApexOptions } from "apexcharts";
 import dynamic from "next/dynamic";
 
-const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false });
+const ApexCharts:any = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 type PropsType = {
   data: number[];
