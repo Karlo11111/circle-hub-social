@@ -37,12 +37,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="description" content="Circlehub React Nextjs Template" />
-        <title>Freedom Social</title>
+        <title>DevHub</title>
       </head>
       <body>
         <ThemeProvider attribute="class" enableSystem={false}>
           <Preloader />
-          <ScrollToTop />
           <NavBar clss={clss} />
           <BottomMenu />
           {children}

@@ -15,7 +15,7 @@ const FriendLeftMenu = () => {
       <div className="d-block d-lg-none">
         <button className="button profile-active mb-4 mb-lg-0 d-flex align-items-center gap-2">
           <i className="material-symbols-outlined mat-icon"> tune </i>
-          <span>My profile</span>
+          <span>My Devkard</span>
         </button>
       </div>
       <div className="profile-sidebar cus-scrollbar p-5">

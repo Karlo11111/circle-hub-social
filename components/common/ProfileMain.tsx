@@ -1,7 +1,9 @@
+import HomeLeft from "../menu/HomeLeft";
 import ProfileEditBanner from "./ProfileEditBanner";
 
 const ProfileMain = ({ children }: { children: React.ReactNode }) => {
   return (
+    
     <main className="main-content">
       <div className="container">
         <div className="row">

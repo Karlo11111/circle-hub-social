@@ -18,8 +18,8 @@ const HomeMain = () => {
               {/* Story Slider */}
               {/* <StorySlider /> */}
 
-              {/* Make Post */}
-              <MakePost />
+              {/* Make Post <MakePost /> */}
+              
 
               {/* Feeds */}
               <NewsFeeds clss="p-3 p-sm-5" />

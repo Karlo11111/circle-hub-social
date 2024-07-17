@@ -13,35 +13,13 @@ const NewsFeeds = ({ clss = "", reaction = "" }) => {
           {/* Post */}
           <Post post={post} />
 
-          {/* Post Reaction */}
-          <PostReaction reaction={reaction} />
+          {/* Post Reaction  <PostReaction reaction={reaction} /> */}
+          
 
-          {/* Write Comment */}
-          <WriteComment />
+          {/* Write Comment  <WriteComment />  */}
+          
 
-          {post.comments
-            ? post?.comments.map((comment) => (
-                <div key={comment.id} className="comments-area mt-5">
-                  <div className="single-comment-area ms-1 ms-xxl-15">
-                    {/* Parent Comment */}
-                    <ParentComment comment={comment} />
-
-                    {/* Sibling Comment */}
-                    {comment?.replies.map((reply, i, arr) => (
-                      <SiblingComment
-                        key={reply.id}
-                        clss={
-                          arr.length - 1 === i
-                            ? "single-comment-area"
-                            : "sibling-comment"
-                        }
-                        reply={reply}
-                      />
-                    ))}
-                  </div>
-                </div>
-              ))
-            : ""}
+          
         </div>
       ))}
     </div>

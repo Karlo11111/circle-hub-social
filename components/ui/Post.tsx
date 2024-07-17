@@ -18,24 +18,15 @@ const Post = ({ post }: { post: PostProps }) => {
     <div className="top-area pb-5">
       <div className="profile-area d-center justify-content-between">
         <div className="avatar-item d-flex gap-3 align-items-center">
-          <div className="avatar position-relative">
-            <Image
-              className="avatar-img max-un"
-              src={avatar_1}
-              alt={authorName}
-            />
-          </div>
+          
           <div className="info-area">
             <h6 className="m-0">
               <Link href="/public-profile/post">{authorName}</Link>
             </h6>
-            <span className="mdtxt status">Active</span>
+            <span className="mdtxt status">Companies and people you pinged recently.</span>
           </div>
         </div>
-        <div className="btn-group cus-dropdown">
-          {/* Post Action */}
-          <PostAction />
-        </div>
+        
       </div>
       <div className="py-4">
         <p className="description">{postText || ""}</p>
@@ -46,31 +37,6 @@ const Post = ({ post }: { post: PostProps }) => {
             </Link>
           ))}
         </p>
-      </div>
-      <div
-        className={`post-img ${
-          imgs?.length > 1
-            ? "d-flex justify-content-between flex-wrap gap-2 gap-lg-3"
-            : ""
-        } `}
-      >
-        {imgs.length > 0 ? (
-          imgs?.length > 1 ? (
-            <>
-              <div className="single">
-                <Image src={imgs[0]} alt="image" />
-              </div>
-              <div className="single d-grid gap-3">
-                <Image src={imgs[1]} alt="image" />
-                <Image src={imgs[2]} alt="image" />
-              </div>
-            </>
-          ) : (
-            <Image src={imgs[0]} alt="image" className="w-100" />
-          )
-        ) : (
-          ""
-        )}
       </div>
     </div>
   );

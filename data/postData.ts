@@ -11,14 +11,13 @@ import post_img_4 from "/public/images/post-img-4.png";
 const postData = [
   {
     id: 1,
-    postText: `I created Roughly plugin to sketch crafted hand-drawn elements
-      which can be used to any usage (diagrams/flows/decoration/etc)`,
+    postText: ``,
     hashTags: [],
     imgs: [post_img_1],
-    authorName: "Lori Cortez",
+    authorName: "Recently pinged by you",
     authorAvt: avatar_1,
     comments: [],
-  },
+  },/*
   {
     id: 2,
     postText: `I created Roughly plugin to sketch crafted hand-drawn elements
@@ -84,7 +83,7 @@ const postData = [
         replies: [],
       },
     ],
-  },
+  },*/
 ];
 
 export default postData;

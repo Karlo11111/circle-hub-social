@@ -2,7 +2,7 @@ import Link from "next/link";
 import Contact from "../common/Contact";
 import MakePost from "../common/MakePost";
 import NewsFeeds from "../common/NewsFeeds";
-import Photos from "../marketplacePost/Photos";
+import Photos from "../../UnusedComponents/marketplacePost/Photos";
 
 const bioData = [
   {
@@ -56,7 +56,7 @@ const ProfilePostMain = () => {
         <div className="d-inline-block d-lg-none">
           <button className="button profile-active mb-4 mb-lg-0 d-flex align-items-center gap-2">
             <i className="material-symbols-outlined mat-icon"> tune </i>
-            <span>My profile</span>
+            <span>My Devkard</span>
           </button>
         </div>
         <div className="profile-sidebar cus-scrollbar max-width p-5">

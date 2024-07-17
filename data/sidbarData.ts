@@ -25,13 +25,11 @@ export const friendLeftMenu = [
 export const homeLeftMenu = [
   ["home", "Home", "/"],
   ["person", "People", "/friend-request"],
-  ["workspace_premium", "Event", "/event"],
+  ["mp", "Companies", "/friend-request"],
+  ["workspace_premium", "Projects", "/event"],
   // ["perm_media", "Pages", "/pages"],
-  ["workspaces", "Create Local Community", "/groups"],
+  //["workspaces", "Create Local Community", "/groups"],
   // ["store", "Marketplace", "/marketplace"],
   // ["sync_saved_locally", "Saved", "/saved-post"],
-  ["Link", "Local Foods", "https://localfoods.market"],
-  ["Link", "Lamars List", "https://www.lamarslist.com/"],
-  ["bookmark_add", "Pegged Research", "/favorites"],
   ["settings", "Settings", "/setting"],
 ];

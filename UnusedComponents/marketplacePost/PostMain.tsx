@@ -1,7 +1,7 @@
-import Contact from "../common/Contact";
-import NewsFeeds from "../common/NewsFeeds";
-import About from "../../UnusedComponents/marketplacePost/About";
-import Photos from "../../UnusedComponents/marketplacePost/Photos";
+import Contact from "../../components/common/Contact";
+import NewsFeeds from "../../components/common/NewsFeeds";
+import About from "./About";
+import Photos from "./Photos";
 
 const PostMain = () => {
   return (
@@ -10,10 +10,12 @@ const PostMain = () => {
         {/* About */}
         <About />
       </div>
+
       <div className="col-xxl-6 col-xl-5 col-lg-8 mt-0 mt-lg-10 mt-xl-0 d-flex flex-column gap-7 cus-z">
         {/* News Feeds */}
         <NewsFeeds clss="p-3 p-sm-5" />
       </div>
+
       <div className="col-xxl-3 col-xl-4 col-lg-4 col-6 mt-5 mt-xl-0">
         <div className="cus-overflow cus-scrollbar sidebar-head">
           <div className="d-flex justify-content-end">

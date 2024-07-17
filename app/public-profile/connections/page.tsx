@@ -1,5 +1,5 @@
 import PublicProfileMain from "@/components/common/PublicProfileMain";
-import ConnectionsMain from "@/components/marketplaceConnections/ConnectionsMain";
+import ConnectionsMain from "@/UnusedComponents/marketplaceConnections/ConnectionsMain";
 
 export default function PublicProfileConnections() {
   return (

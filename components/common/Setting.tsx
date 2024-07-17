@@ -50,7 +50,7 @@ const Setting: React.FC<MessageProps> = ({ activeHandler, stgRef }) => {
         </div>
         <div className="view-profile my-2">
           <Link href="/profile/post" className="mdtxt w-100 text-center py-2">
-            View profile
+            View Devkard
           </Link>
         </div>
         <ul>

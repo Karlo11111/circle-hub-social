@@ -26,15 +26,13 @@ const RightSide = () => {
       </div>
       <div className="cus-scrollbar side-wrapper">
         <div className="sidebar-wrapper d-flex flex-column gap-6">
-          <div className="sidebar-area p-5">
-            {/* Request */}
-            <Request />
-          </div>
+          
+
           <div className="sidebar-area p-5">
             {/* Contact */}
             <Contact>
               <div className="mb-4">
-                <h6 className="d-inline-flex">Local Communities</h6>
+                <h6 className="d-inline-flex">Recently pinged You</h6>
               </div>
             </Contact>
           </div>

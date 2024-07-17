@@ -25,7 +25,7 @@ const GroupLeftMenu = ({ name, type, img, adminTools }: GroupMenuProps) => {
           onClick={() => setActiveProfile(!activeProfile)}
         >
           <i className="material-symbols-outlined mat-icon"> tune </i>
-          <span>My profile</span>
+          <span>My Devkard</span>
         </button>
       </div>
       <div

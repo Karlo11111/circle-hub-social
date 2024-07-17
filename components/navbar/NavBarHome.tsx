@@ -9,7 +9,7 @@ import Setting from "../common/Setting";
 // import logo from "/public/images/logo.png";
 import logo from "/public/images/icon.png";
 
-const NavBar = ({ clss = "container" }: { clss: string }) => {
+const NavBarHome = ({ clss = "container" }: { clss: string }) => {
   const [windowHeight, setWindowHeight] = useState(0);
   const [active, setActive] = useState<string>("");
   const [activeSearctForm, setActiveSearctForm] = useState(false);
@@ -91,35 +91,13 @@ const activeHandler = (opt: any) => {
               </form>
             </div>
             <ul className="navbar-nav feed flex-row gap-xl-20 gap-lg-10 gap-sm-7 gap-3 py-4 py-lg-0 m-lg-auto ms-auto ms-aut align-self-center">
-              <li>
-                <Link href="/" className="nav-icon home active">
-                  <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
-                    home
-                  </i>
-                </Link>
-              </li>
+              
+              
               <div className="tooltip-container">
-                <Link href="/#news-feed" className="nav-icon feed">
-                  <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
-                    feed
-                  </i>
-                  <span className="tooltip-text">Research</span>
-                </Link>
+                
               </div>
-              {/* <li>
-                <Link href="/groups" className="nav-icon">
-                  <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
-                    group
-                  </i>
-                </Link>
-              </li> */}
-              <li>
-                <Link href="#" className="nav-icon">
-                  <i className="mat-icon fs-xxl material-symbols-outlined mat-icon">
-                    smart_display
-                  </i>
-                </Link>
-              </li>
+              
+             
             </ul>
             <div className="right-area position-relative d-flex gap-3 gap-xxl-6 align-items-center">
               
@@ -152,4 +130,4 @@ const activeHandler = (opt: any) => {
   );
 };
 
-export default NavBar;
+export default NavBarHome;
