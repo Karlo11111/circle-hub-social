@@ -18,7 +18,7 @@ const NewsFeeds = ({ clss = "", reaction = "" }) => {
 
           {/* Write Comment  <WriteComment />  */}
           
-
+          
           
         </div>
       ))}

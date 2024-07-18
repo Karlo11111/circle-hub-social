@@ -61,7 +61,7 @@ const Setting: React.FC<MessageProps> = ({ activeHandler, stgRef }) => {
             </Link>
           </li>
           <li>
-            <Link href="/#" className="mdtxt">
+            <Link href="/auth" className="mdtxt">
               <i className="material-symbols-outlined mat-icon">
                 power_settings_new
               </i>
