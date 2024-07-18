@@ -7,7 +7,7 @@ import Message from "../common/Message";
 import Notification from "../common/Notification";
 import Setting from "../common/Setting";
 // import logo from "/public/images/logo.png";
-import logo from "/public/images/icon.png";
+import logo from "/public/images/icon.svg";
 
 const NavBarHome = ({ clss = "container" }: { clss: string }) => {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -70,7 +70,7 @@ const activeHandler = (opt: any) => {
         <div className={clss}>
           <nav className="navbar w-100 navbar-expand-lg justify-content-betweenm">
             <Link href="/" className="navbar-brand">
-              <Image src={logo} height={60} width={60} className="logo" style={{borderRadius:"20px"}} alt="logo" />
+              <Image src={logo} height={100} width={60} className="logo" style={{borderRadius:"20px"}} alt="logo" />
             </Link>
             <button
               className="button search-active d-block d-md-none"

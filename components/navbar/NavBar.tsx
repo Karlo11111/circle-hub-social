@@ -7,7 +7,7 @@ import Message from "../common/Message";
 import Notification from "../common/Notification";
 import Setting from "../common/Setting";
 // import logo from "/public/images/logo.png";
-import logo from "/public/images/icon.png";
+import logo from "/public/images/icon.svg";
 
 const NavBar = ({ clss = "container" }: { clss: string }) => {
   const [windowHeight, setWindowHeight] = useState(0);
