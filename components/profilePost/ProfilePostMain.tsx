@@ -2,7 +2,9 @@ import Link from "next/link";
 import Contact from "../common/Contact";
 import MakePost from "../common/MakePost";
 import NewsFeeds from "../common/NewsFeeds";
-import Photos from "../../UnusedComponents/marketplacePost/Photos";
+// import Photos from "../../UnusedComponents/marketplacePost/Projects";
+// import ProfileProjects from "@/app/profile/projects/page";
+// import Projects from "../../UnusedComponents/marketplacePost/Projects";
 
 const bioData = [
   {
@@ -122,7 +124,7 @@ const ProfilePostMain = () => {
             <div className="sidebar-wrapper d-flex flex-column gap-6 max-width">
               <div className="sidebar-area post-item p-5">
                 {/* Photos */}
-                <Photos />
+                {/* <Projects /> */}
               </div>
               <div className="sidebar-area p-5">
                 {/* Contact */}

@@ -1,7 +1,8 @@
+import ProfileProjects from "@/app/profile/projects/page";
 import Contact from "../../components/common/Contact";
 import NewsFeeds from "../../components/common/NewsFeeds";
 import About from "./About";
-import Photos from "./Photos";
+import Projects from "./Projects";
 
 const PostMain = () => {
   return (
@@ -30,7 +31,7 @@ const PostMain = () => {
             <div className="sidebar-wrapper d-flex flex-column gap-6 max-width">
               <div className="sidebar-area post-item p-5">
                 {/* Photos */}
-                <Photos />
+                <Projects />
               </div>
               <div className="sidebar-area p-5">
                 {/* Contact */}

@@ -144,7 +144,7 @@ const PageDetailsMain = () => {
 
                           <div className="sidebar-area post-item p-5">
                             <div className="mb-3">
-                              <h6 className="d-inline-flex">Photos</h6>
+                              <h6 className="d-inline-flex">Projects</h6>
                             </div>
                             <div className="post-single-box">
                               <div className="post-img d-flex justify-content-between flex-wrap gap-2 gap-lg-3">

@@ -26,7 +26,7 @@ export const homeLeftMenu = [
   ["home", "Home", "/"],
   ["person", "People", "/friend-request"],
   ["mp", "Companies", "/friend-request"],
-  ["workspace_premium", "Projects", "/event"],
+  ["workspace_premium", "Projects", "/profile/projects"],
   // ["perm_media", "Pages", "/pages"],
   //["workspaces", "Create Local Community", "/groups"],
   // ["store", "Marketplace", "/marketplace"],

@@ -94,12 +94,12 @@ const ProfileEditBanner = () => {
             </li>
             <li className="nav-item" role="presentation">
               <Link
-                href="/profile/photos"
+                href="/profile/projects"
                 className={`nav-link d-center ${
-                  lastPath === "photos" && "active"
+                  lastPath === "projects" && "active"
                 }`}
               >
-                Photos
+                Projects
               </Link>
             </li>
             <li className="nav-item" role="presentation">

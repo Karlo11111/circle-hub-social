@@ -1,12 +1,13 @@
 import ProfileMain from "@/components/common/ProfileMain";
-import ProfilePhotosMain from "@/components/profilePhotos/ProfilePhotosMain";
+import ProfileProjectsMain from "@/components/profileProjects/ProfileProjectsMain";
 
-export default function ProfilePhotos() {
+
+export default function ProfileProjects() {
   return (
     // Profile Main section
     <ProfileMain>
       {/* Profile Photos Main */}
-      <ProfilePhotosMain />
+      <ProfileProjectsMain />
     </ProfileMain>
   );
 }

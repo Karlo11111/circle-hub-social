@@ -12,7 +12,7 @@ const MarketplacePostMain = ({ children }: { children: React.ReactNode }) => {
                 tabData={[
                   ["Post", "post", "/marketplace/post"],
                   ["About", "about", "/marketplace/about"],
-                  ["Photos", "photos", "/marketplace/photos"],
+                  ["Projects", "projects", "/marketplace/projects"],
                   ["Groups", "group", "/marketplace/group"],
                   ["Connections", "connections", "/marketplace/connections"],
                   ["Events", "events", "/marketplace/events"],

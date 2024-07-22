@@ -1,7 +1,8 @@
 import Contact from "../common/Contact";
 import NewsFeeds from "../common/NewsFeeds";
 import About from "../../UnusedComponents/marketplacePost/About";
-import Photos from "../../UnusedComponents/marketplacePost/Photos";
+import Photos from "../../UnusedComponents/marketplacePost/Projects";
+import Projects from "../../UnusedComponents/marketplacePost/Projects";
 
 const PostMain = () => {
   return (
@@ -28,7 +29,7 @@ const PostMain = () => {
             <div className="sidebar-wrapper d-flex flex-column gap-6 max-width">
               <div className="sidebar-area post-item p-5">
                 {/* Photos */}
-                <Photos />
+                <Projects />
               </div>
               <div className="sidebar-area p-5">
                 {/* Contact */}

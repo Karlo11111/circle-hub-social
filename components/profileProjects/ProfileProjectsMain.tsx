@@ -1,7 +1,7 @@
 import Contact from "../common/Contact";
 import Gallery from "../common/Gallery";
 
-const ProfilePhotosMain = () => {
+const ProfileProjectsMain = () => {
   return (
     <>
       {/* Gallery */}
@@ -25,4 +25,4 @@ const ProfilePhotosMain = () => {
   );
 };
 
-export default ProfilePhotosMain;
+export default ProfileProjectsMain;

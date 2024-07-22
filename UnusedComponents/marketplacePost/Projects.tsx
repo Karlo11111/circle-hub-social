@@ -6,11 +6,11 @@ import post_img_17 from "/public/images/post-img-17.png";
 import post_img_5 from "/public/images/post-img-5.png";
 import post_img_6 from "/public/images/post-img-6.png";
 
-const Photos = () => {
+const Projects = () => {
   return (
     <>
       <div className="mb-3">
-        <h6 className="d-inline-flex">Photos</h6>
+        <h6 className="d-inline-flex">Projects</h6>
       </div>
       <div className="post-single-box">
         <div className="post-img d-flex justify-content-between flex-wrap gap-2 gap-lg-3">
@@ -32,4 +32,4 @@ const Photos = () => {
   );
 };
 
-export default Photos;
+export default Projects;
